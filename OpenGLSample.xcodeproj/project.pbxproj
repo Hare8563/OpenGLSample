@@ -7,27 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3272AE1E1DF2974E003E56FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3272AE1D1DF2974E003E56FA /* main.c */; };
+		323576151E17C2BB007F6529 /* shader.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3272AE2B1DF29B5A003E56FA /* shader.frag */; };
+		323576161E17C2C0007F6529 /* shader.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3272AE2A1DF29B4B003E56FA /* shader.vert */; };
+		323576191E17C913007F6529 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 323576181E17C913007F6529 /* libGLEW.a */; };
+		3235761B1E17C9A3007F6529 /* shader_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3235761A1E17C9A3007F6529 /* shader_utils.cpp */; };
+		3272AE1E1DF2974E003E56FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3272AE1D1DF2974E003E56FA /* main.cpp */; };
 		3272AE201DF2974E003E56FA /* OpenGLSample.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3272AE1F1DF2974E003E56FA /* OpenGLSample.1 */; };
+		3272AE281DF29769003E56FA /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3272AE261DF29769003E56FA /* GLUT.framework */; };
+		3272AE291DF29769003E56FA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3272AE271DF29769003E56FA /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3272AE181DF2974E003E56FA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				323576161E17C2C0007F6529 /* shader.vert in CopyFiles */,
+				323576151E17C2BB007F6529 /* shader.frag in CopyFiles */,
 				3272AE201DF2974E003E56FA /* OpenGLSample.1 in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		323576171E17C6FB007F6529 /* shader_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_utils.h; sourceTree = "<group>"; };
+		323576181E17C913007F6529 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
+		3235761A1E17C9A3007F6529 /* shader_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader_utils.cpp; sourceTree = "<group>"; };
 		3272AE1A1DF2974E003E56FA /* OpenGLSample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLSample; sourceTree = BUILT_PRODUCTS_DIR; };
-		3272AE1D1DF2974E003E56FA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		3272AE1D1DF2974E003E56FA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3272AE1F1DF2974E003E56FA /* OpenGLSample.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGLSample.1; sourceTree = "<group>"; };
+		3272AE261DF29769003E56FA /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		3272AE271DF29769003E56FA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3272AE2A1DF29B4B003E56FA /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		3272AE2B1DF29B5A003E56FA /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3272AE281DF29769003E56FA /* GLUT.framework in Frameworks */,
+				3272AE291DF29769003E56FA /* OpenGL.framework in Frameworks */,
+				323576191E17C913007F6529 /* libGLEW.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,9 @@
 		3272AE111DF2974E003E56FA = {
 			isa = PBXGroup;
 			children = (
+				323576181E17C913007F6529 /* libGLEW.a */,
+				3272AE261DF29769003E56FA /* GLUT.framework */,
+				3272AE271DF29769003E56FA /* OpenGL.framework */,
 				3272AE1C1DF2974E003E56FA /* OpenGLSample */,
 				3272AE1B1DF2974E003E56FA /* Products */,
 			);
@@ -60,8 +81,12 @@
 		3272AE1C1DF2974E003E56FA /* OpenGLSample */ = {
 			isa = PBXGroup;
 			children = (
-				3272AE1D1DF2974E003E56FA /* main.c */,
+				3272AE2A1DF29B4B003E56FA /* shader.vert */,
+				3272AE1D1DF2974E003E56FA /* main.cpp */,
 				3272AE1F1DF2974E003E56FA /* OpenGLSample.1 */,
+				3272AE2B1DF29B5A003E56FA /* shader.frag */,
+				323576171E17C6FB007F6529 /* shader_utils.h */,
+				3235761A1E17C9A3007F6529 /* shader_utils.cpp */,
 			);
 			path = OpenGLSample;
 			sourceTree = "<group>";
@@ -117,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3272AE1E1DF2974E003E56FA /* main.c in Sources */,
+				3235761B1E17C9A3007F6529 /* shader_utils.cpp in Sources */,
+				3272AE1E1DF2974E003E56FA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +223,13 @@
 		3272AE241DF2974E003E56FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CFLAGS = "-lm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +237,13 @@
 		3272AE251DF2974E003E56FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CFLAGS = "-lm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +267,7 @@
 				3272AE251DF2974E003E56FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
